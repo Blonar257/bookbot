@@ -11,7 +11,7 @@ def main():
     num_words = get_num_words(text)
     num_chars_dict = get_num_character(text)
     sorted = sorted_list(num_chars_dict)
-    
+
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
     print("----------- Word Count ----------")
@@ -19,5 +19,6 @@ def main():
     print("--------- Character Count -------")
     for i in sorted:
         print(f"{i["char"]}: {i["num"]}")
+
 
 main()
