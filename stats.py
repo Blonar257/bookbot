@@ -8,7 +8,7 @@ def get_num_character(text: str) -> dict:
     for c in text.lower():
         try:
             char_dict[c] += 1
-        except Exception as e:
+        except:
             char_dict[c] = 1
     return char_dict
 
